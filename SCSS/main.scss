@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 80%;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    a {
+      padding-left: 30px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
