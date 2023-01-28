@@ -6,14 +6,13 @@
 }
 
 body {
-  border-radius: 15px;
-  position: relative;
   background-color: RGB(229 76 197);
+  width: 100%;
 }
 
 .container {
-  margin: 30px auto;
-  max-width: 1500px;
+  margin: 35px auto;
+  max-width: 1450px;
 }
 
 header {
@@ -93,4 +92,45 @@ header {
 
 main {
   background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  section {
+    padding: 60px 0;
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      opacity: 0.9;
+    }
+
+    .first-row,
+    .second-row,
+    .meanings {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 0 200px;
+    }
+    i {
+      font-size: 50px;
+      color: rgb(229, 79, 197);
+      margin-top: 50px;
+    }
+
+    .second-row {
+      margin-top: 40px;
+
+      img {
+        width: 50px;
+        margin: 0 auto;
+      }
+    }
+
+    .meanings {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+  }
 }
