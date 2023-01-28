@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,6 @@ header {
   margin: 0 auto;
   padding-top: 40px;
   background-color: RGB(244 244 243);
-  position: relative;
 }
 header nav {
   display: flex;
@@ -187,4 +187,8 @@ main .second-section .grid-cards .card .about-app a:hover {
 }
 main .second-section .grid-cards .card:hover {
   transform: scale(1.1);
+}
+main .second-section .wave-three {
+  position: relative;
+  bottom: -70px;
 }/*# sourceMappingURL=main.css.map */

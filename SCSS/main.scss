@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,6 @@ header {
   margin: 0 auto;
   padding-top: 40px;
   background-color: RGB(244 244 243);
-  position: relative;
 
   nav {
     display: flex;
@@ -208,6 +208,10 @@ main {
       .card:hover {
         transform: scale(1.1);
       }
+    }
+    .wave-three {
+      position: relative;
+      bottom: -70px;
     }
   }
 }
