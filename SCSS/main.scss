@@ -57,6 +57,10 @@ header {
         border-radius: 25px;
         padding: 8px;
         margin-left: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      a:hover {
+        background-color: rgba(253, 196, 241, 0.4);
       }
     }
   }
@@ -91,11 +95,11 @@ header {
 }
 
 main {
-  background-color: white;
   margin: 0 auto;
   text-align: center;
-  section {
+  .first-section {
     padding: 60px 0;
+    background-color: white;
 
     h3 {
       font-size: 30px;
@@ -131,6 +135,79 @@ main {
     .meanings {
       font-size: 13px;
       opacity: 0.9;
+    }
+
+    .wave-two {
+      position: relative;
+      bottom: -70px;
+    }
+  }
+
+  .second-section {
+    background-color: RGB(244 244 243);
+    padding-bottom: 60px;
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 30px 60px;
+
+      .card {
+        max-width: 350px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        transition: transform 0.3s;
+
+        img {
+          max-width: 350px;
+          border-radius: 15px;
+        }
+
+        .about-app {
+          padding: 10px 20px;
+          h4 {
+            font-size: 20px;
+            opacity: 0.9;
+          }
+
+          p {
+            text-align: left;
+            padding-top: 10px;
+            opacity: 0.9;
+            height: 130px;
+          }
+          .built-with {
+            padding-top: 30px;
+          }
+          a {
+            text-decoration: none;
+            border: 1px solid rgb(229, 79, 197);
+            padding: 10px;
+            background-color: rgba(237, 103, 208, 0.8);
+            border-radius: 25px;
+            color: white;
+            transition: all 150ms ease-in-out;
+          }
+          a:hover {
+            background-color: rgb(229, 79, 197);
+          }
+        }
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
