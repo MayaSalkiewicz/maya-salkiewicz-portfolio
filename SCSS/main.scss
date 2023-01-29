@@ -22,18 +22,20 @@ header {
   background-color: RGB(244 244 243);
 
   nav {
+    margin: 0 auto;
+    align-items: center;
+    position: fixed;
+    left: 10%;
+    right: 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    margin: 0 auto;
-    max-width: 1200px;
+    width: 80vw;
     border: 1px solid rgba(255, 255, 255, 0.9);
     background-color: white;
     padding: 20px 25px;
     border-radius: 45px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 100;
 
     .nav-left {
       display: flex;
@@ -72,6 +74,7 @@ header {
     align-items: center;
 
     h1 {
+      margin-top: 60px;
       display: flex;
       justify-content: center;
       max-width: 1000px;
@@ -86,6 +89,10 @@ header {
       font-size: 50px;
       margin: 45px;
     }
+
+    p {
+      font-size: 20px;
+    }
   }
 
   .wave {
@@ -98,8 +105,22 @@ main {
   margin: 0 auto;
   text-align: center;
   .first-section {
-    padding: 60px 0;
     background-color: white;
+    img {
+      max-width: 300px;
+      border-radius: 50% 50%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .wave-one {
+      position: relative;
+      bottom: -10px;
+    }
+  }
+
+  .second-section {
+    padding: 60px 0;
+    background-color: #f3f4f5;
 
     h3 {
       font-size: 30px;
@@ -143,8 +164,8 @@ main {
     }
   }
 
-  .second-section {
-    background-color: RGB(244 244 243);
+  .third-section {
+    background-color: white;
     padding-bottom: 60px;
 
     h3 {
@@ -163,7 +184,7 @@ main {
 
       .card {
         max-width: 350px;
-        background-color: white;
+        background-color: RGB(244 244 243);
         border-radius: 15px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin: 0 auto;
@@ -214,4 +235,13 @@ main {
       bottom: -70px;
     }
   }
+}
+
+.sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 25px 8%;
+  transition: padding 1s;
 }

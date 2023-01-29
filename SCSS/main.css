@@ -22,19 +22,20 @@ header {
   background-color: RGB(244 244 243);
 }
 header nav {
+  margin: 0 auto;
+  align-items: center;
+  position: fixed;
+  left: 10%;
+  right: 10%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 80vw;
   border: 1px solid rgba(255, 255, 255, 0.9);
   background-color: white;
   padding: 20px 25px;
   border-radius: 45px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 100;
 }
 header nav .nav-left {
   display: flex;
@@ -68,6 +69,7 @@ header .about-me {
   align-items: center;
 }
 header .about-me h1 {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   max-width: 1000px;
@@ -81,6 +83,9 @@ header .about-me h2 {
   font-size: 50px;
   margin: 45px;
 }
+header .about-me p {
+  font-size: 20px;
+}
 header .wave {
   position: relative;
   bottom: -10px;
@@ -91,89 +96,101 @@ main {
   text-align: center;
 }
 main .first-section {
-  padding: 60px 0;
   background-color: white;
 }
-main .first-section h3 {
-  font-size: 30px;
-  margin-bottom: 30px;
+main .first-section img {
+  max-width: 300px;
+  border-radius: 50% 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-main .first-section h4 {
-  opacity: 0.9;
-}
-main .first-section .first-row,
-main .first-section .second-row,
-main .first-section .meanings {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 0 200px;
-}
-main .first-section i {
-  font-size: 50px;
-  color: rgb(229, 79, 197);
-  margin-top: 50px;
-}
-main .first-section .second-row {
-  margin-top: 40px;
-}
-main .first-section .second-row img {
-  width: 50px;
-  margin: 0 auto;
-}
-main .first-section .meanings {
-  font-size: 13px;
-  opacity: 0.9;
-}
-main .first-section .wave-two {
+main .first-section .wave-one {
   position: relative;
-  bottom: -70px;
+  bottom: -10px;
 }
 main .second-section {
-  background-color: RGB(244 244 243);
-  padding-bottom: 60px;
+  padding: 60px 0;
+  background-color: #f3f4f5;
 }
 main .second-section h3 {
   font-size: 30px;
   margin-bottom: 30px;
 }
 main .second-section h4 {
+  opacity: 0.9;
+}
+main .second-section .first-row,
+main .second-section .second-row,
+main .second-section .meanings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0 200px;
+}
+main .second-section i {
+  font-size: 50px;
+  color: rgb(229, 79, 197);
+  margin-top: 50px;
+}
+main .second-section .second-row {
+  margin-top: 40px;
+}
+main .second-section .second-row img {
+  width: 50px;
+  margin: 0 auto;
+}
+main .second-section .meanings {
+  font-size: 13px;
+  opacity: 0.9;
+}
+main .second-section .wave-two {
+  position: relative;
+  bottom: -70px;
+}
+main .third-section {
+  background-color: white;
+  padding-bottom: 60px;
+}
+main .third-section h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+main .third-section h4 {
   margin-bottom: 20px;
 }
-main .second-section .grid-cards {
+main .third-section .grid-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 30px 60px;
 }
-main .second-section .grid-cards .card {
+main .third-section .grid-cards .card {
   max-width: 350px;
-  background-color: white;
+  background-color: RGB(244 244 243);
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 0 auto;
   padding-bottom: 20px;
   transition: transform 0.3s;
 }
-main .second-section .grid-cards .card img {
+main .third-section .grid-cards .card img {
   max-width: 350px;
   border-radius: 15px;
 }
-main .second-section .grid-cards .card .about-app {
+main .third-section .grid-cards .card .about-app {
   padding: 10px 20px;
 }
-main .second-section .grid-cards .card .about-app h4 {
+main .third-section .grid-cards .card .about-app h4 {
   font-size: 20px;
   opacity: 0.9;
 }
-main .second-section .grid-cards .card .about-app p {
+main .third-section .grid-cards .card .about-app p {
   text-align: left;
   padding-top: 10px;
   opacity: 0.9;
   height: 130px;
 }
-main .second-section .grid-cards .card .about-app .built-with {
+main .third-section .grid-cards .card .about-app .built-with {
   padding-top: 30px;
 }
-main .second-section .grid-cards .card .about-app a {
+main .third-section .grid-cards .card .about-app a {
   text-decoration: none;
   border: 1px solid rgb(229, 79, 197);
   padding: 10px;
@@ -182,13 +199,22 @@ main .second-section .grid-cards .card .about-app a {
   color: white;
   transition: all 150ms ease-in-out;
 }
-main .second-section .grid-cards .card .about-app a:hover {
+main .third-section .grid-cards .card .about-app a:hover {
   background-color: rgb(229, 79, 197);
 }
-main .second-section .grid-cards .card:hover {
+main .third-section .grid-cards .card:hover {
   transform: scale(1.1);
 }
-main .second-section .wave-three {
+main .third-section .wave-three {
   position: relative;
   bottom: -70px;
+}
+
+.sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 25px 8%;
+  transition: padding 1s;
 }/*# sourceMappingURL=main.css.map */
