@@ -106,10 +106,38 @@ main {
   text-align: center;
   .first-section {
     background-color: white;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
     img {
-      max-width: 300px;
+      max-width: 400px;
       border-radius: 50% 50%;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin: 0 auto;
+    }
+    div {
+      padding-right: 100px;
+      p {
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid rgb(229, 79, 197);
+        padding: 10px;
+        background-color: rgba(237, 103, 208, 0.8);
+        border-radius: 25px;
+        color: white;
+        transition: all 150ms ease-in-out;
+      }
+
+      a:hover {
+        background-color: rgb(229, 79, 197);
+      }
     }
 
     .wave-one {
