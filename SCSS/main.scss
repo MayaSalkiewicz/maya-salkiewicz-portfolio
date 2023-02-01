@@ -473,7 +473,11 @@ main {
             height: 130px;
           }
           .built-with {
-            padding-top: 30px;
+            padding-top: 40px;
+          }
+
+          .built-with-worldclock {
+            padding-top: 60px;
           }
           a {
             text-decoration: none;
@@ -528,6 +532,10 @@ main {
               text-align: center;
               height: 120px;
               font-size: 20px;
+            }
+
+            .built-with-worldclock {
+              padding-top: 30px;
             }
 
             a {
