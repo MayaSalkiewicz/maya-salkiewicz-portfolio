@@ -56,7 +56,8 @@ header nav .nav-left a {
   color: black;
 }
 header nav .profiles {
-  justify-content: space-between;
+  display: flex;
+  justify-content: flex-end;
 }
 header nav .profiles a {
   text-decoration: none;
@@ -94,9 +95,17 @@ header .about-me h2 {
 header .about-me p {
   font-size: 20px;
 }
+header .mobile-nav {
+  display: none;
+}
 header .wave {
   position: relative;
   bottom: -10px;
+}
+@media (min-width: 768px) {
+  header .hamburger {
+    display: none;
+  }
 }
 @media (max-width: 980px) {
   header header {
@@ -115,7 +124,7 @@ header .wave {
     padding: 15px 10px;
   }
   header nav .nav-left a {
-    font-size: 10px;
+    font-size: 12px;
   }
   header nav .profiles {
     display: none;
