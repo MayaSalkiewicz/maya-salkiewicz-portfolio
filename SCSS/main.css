@@ -530,6 +530,38 @@ main .third-section .wave-three {
   }
 }
 
+footer {
+  background-color: #f3f4f5;
+  padding-bottom: 50px;
+  padding-right: 100px;
+}
+footer .links {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  cursor: pointer;
+}
+footer i {
+  font-size: 40px;
+  color: rgba(237, 103, 208, 0.8);
+  padding: 5px 20px;
+  transition: all 150ms ease-in-out;
+}
+footer i:hover {
+  color: rgb(229, 79, 197);
+}
+footer p {
+  font-size: 9px;
+}
+@media (max-width: 600px) {
+  footer {
+    padding-right: 0;
+  }
+  footer .links {
+    justify-content: center;
+  }
+}
+
 .sticky {
   top: 0;
   left: 0;
