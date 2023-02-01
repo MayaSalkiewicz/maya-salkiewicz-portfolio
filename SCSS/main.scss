@@ -194,8 +194,8 @@ header {
     .mobile-nav {
       position: fixed;
       margin-top: 66px;
-      bottom: 100%;
-      right: 0;
+      top: 0;
+      right: 100%;
       width: 50%;
       min-height: 100vh;
       display: block;
@@ -205,7 +205,7 @@ header {
       transition: 0.4s;
     }
     .mobile-nav.is-active {
-      bottom: -66px;
+      right: 0;
     }
     .hamburger-link {
       display: block;

@@ -18,4 +18,5 @@ menuBtn.addEventListener("click", function () {
 
 menuList.addEventListener("click", function () {
   menuList.classList.remove("is-active");
+  menuBtn.classList.toggle("is-active");
 });
