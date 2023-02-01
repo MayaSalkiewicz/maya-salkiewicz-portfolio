@@ -107,7 +107,7 @@ header .wave {
     display: none;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 990px) {
   header header {
     margin: auto;
     padding: 0;
@@ -137,6 +137,7 @@ header .wave {
   }
   header .about-me h2 {
     font-size: 30px;
+    margin: 30px auto;
   }
   header .about-me p {
     font-size: 15px;
@@ -255,6 +256,28 @@ main .first-section div a:hover {
     grid-template-columns: 1fr;
   }
   main .first-section img {
+    max-width: 250px;
+  }
+  main .first-section div {
+    padding: 0 30px;
+  }
+  main .first-section div p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  main .first-section div a {
+    font-size: 15px;
+    padding: 8px 8px;
+  }
+}
+@media (max-width: 500px) {
+  main .first-section .first-section {
+    margin: 0 auto;
+  }
+  main .first-section .grid {
+    grid-template-columns: 1fr;
+  }
+  main .first-section img {
     max-width: 200px;
   }
   main .first-section div {
@@ -312,6 +335,34 @@ main .second-section .wave-two {
   bottom: -70px;
 }
 @media (max-width: 980px) {
+  main .second-section {
+    padding: 20px 0;
+  }
+  main .second-section h3 {
+    font-size: 23px;
+  }
+  main .second-section h4 {
+    font-size: 15px;
+  }
+  main .second-section .first-row,
+main .second-section .second-row,
+main .second-section .meanings {
+    padding: 0 40px;
+  }
+  main .second-section i {
+    font-size: 40px;
+  }
+  main .second-section .second-row img {
+    width: 40px;
+  }
+  main .second-section .meanings {
+    font-size: 11px;
+  }
+  main .second-section .wave-two {
+    bottom: -30px;
+  }
+}
+@media (max-width: 550px) {
   main .second-section {
     padding: 20px 0;
   }
