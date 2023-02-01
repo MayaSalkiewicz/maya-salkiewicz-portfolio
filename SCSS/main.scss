@@ -498,7 +498,47 @@ main {
       bottom: -70px;
     }
 
-    @media (max-width: 980px) {
+    @media (max-width: 1210px) {
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .grid-cards {
+        grid-template-columns: 1fr;
+        padding: 10px;
+
+        .card {
+          max-width: 650px;
+          margin-bottom: 40px;
+
+          img {
+            max-width: 650px;
+          }
+
+          .about-app {
+            padding: 5px 10px;
+            h4 {
+              font-size: 25px;
+            }
+
+            p {
+              text-align: center;
+              height: 120px;
+              font-size: 20px;
+            }
+
+            a {
+              padding: 10px 10px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 670px) {
       h3 {
         font-size: 20px;
         margin-bottom: 10px;

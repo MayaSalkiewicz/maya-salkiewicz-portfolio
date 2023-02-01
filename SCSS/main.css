@@ -453,7 +453,42 @@ main .third-section .wave-three {
   position: relative;
   bottom: -70px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1210px) {
+  main .third-section h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  main .third-section h4 {
+    font-size: 18px;
+  }
+  main .third-section .grid-cards {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  main .third-section .grid-cards .card {
+    max-width: 650px;
+    margin-bottom: 40px;
+  }
+  main .third-section .grid-cards .card img {
+    max-width: 650px;
+  }
+  main .third-section .grid-cards .card .about-app {
+    padding: 5px 10px;
+  }
+  main .third-section .grid-cards .card .about-app h4 {
+    font-size: 25px;
+  }
+  main .third-section .grid-cards .card .about-app p {
+    text-align: center;
+    height: 120px;
+    font-size: 20px;
+  }
+  main .third-section .grid-cards .card .about-app a {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 670px) {
   main .third-section h3 {
     font-size: 20px;
     margin-bottom: 10px;
