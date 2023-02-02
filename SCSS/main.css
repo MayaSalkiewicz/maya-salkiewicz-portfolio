@@ -429,15 +429,11 @@ main .third-section .grid-cards .card .about-app h4 {
 }
 main .third-section .grid-cards .card .about-app p {
   text-align: left;
-  padding-top: 10px;
   opacity: 0.9;
   height: 130px;
 }
 main .third-section .grid-cards .card .about-app .built-with {
   padding-top: 40px;
-}
-main .third-section .grid-cards .card .about-app .built-with-worldclock {
-  padding-top: 60px;
 }
 main .third-section .grid-cards .card .about-app a {
   text-decoration: none;
@@ -525,6 +521,9 @@ main .third-section .wave-three {
     text-align: center;
     height: 130px;
     font-size: 15px;
+  }
+  main .third-section .grid-cards .card .about-app .built-with-worldclock {
+    padding-top: 60px;
   }
   main .third-section .grid-cards .card .about-app a {
     padding: 8px 10px;

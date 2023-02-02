@@ -470,7 +470,6 @@ main {
 
           p {
             text-align: left;
-            padding-top: 10px;
             opacity: 0.9;
             height: 130px;
           }
@@ -478,9 +477,6 @@ main {
             padding-top: 40px;
           }
 
-          .built-with-worldclock {
-            padding-top: 60px;
-          }
           a {
             text-decoration: none;
             border: 1px solid rgb(229, 79, 197);
@@ -578,6 +574,10 @@ main {
               text-align: center;
               height: 130px;
               font-size: 15px;
+            }
+
+            .built-with-worldclock {
+              padding-top: 60px;
             }
 
             a {
