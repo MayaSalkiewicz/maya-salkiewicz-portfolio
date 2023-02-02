@@ -220,6 +220,7 @@ main .first-section .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding-top: 80px;
 }
 main .first-section img {
   max-width: 400px;
@@ -370,6 +371,7 @@ main .second-section .meanings {
   }
   main .second-section h4 {
     font-size: 15px;
+    padding: 0 10px;
   }
   main .second-section .first-row,
 main .second-section .second-row,
