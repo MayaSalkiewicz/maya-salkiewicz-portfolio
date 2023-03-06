@@ -10,6 +10,10 @@ body {
   background-color: RGB(229 76 197);
 }
 
+[id] {
+  scroll-margin-top: 180px;
+}
+
 .container {
   margin: 35px auto;
   max-width: 1450px;
@@ -529,7 +533,6 @@ main {
             p {
               text-align: center;
               height: 120px;
-              font-size: 20px;
             }
 
             .built-with-worldclock {

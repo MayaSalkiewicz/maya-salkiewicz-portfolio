@@ -10,6 +10,10 @@ body {
   background-color: RGB(229 76 197);
 }
 
+[id] {
+  scroll-margin-top: 180px;
+}
+
 .container {
   margin: 35px auto;
   max-width: 1450px;
@@ -482,7 +486,6 @@ main .third-section .wave-three {
   main .third-section .grid-cards .card .about-app p {
     text-align: center;
     height: 120px;
-    font-size: 20px;
   }
   main .third-section .grid-cards .card .about-app .built-with-worldclock {
     padding-top: 30px;
